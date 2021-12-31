@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'その日はとても有意義だった。:insertx:は飛び立った。:inserty:に到着した, しかし雨が降ってきた。:insertz:は晴れの王と喧嘩中だった。 :insertx: は羽をびしょ濡れにされ、天気の王には負けることはいつもの話であった。と Bob は語る';
+const storyText = 'その日はとても有意義だった。:insertx:は飛び立った。:inserty:に到着した, しかし雨が降ってきた。:insertz:は晴れの王と喧嘩中だった。 :insertx: は羽をびしょ濡れにされ、天気の王には負けることはいつもの話であった。と名前は語る';
 const insertX = ['悪魔', '天使', '神'];
 const insertY = ['人間界', '天界', '雲'];
 const insertZ = ['雨の王', '雷の王', '風の王'];
@@ -28,7 +28,7 @@ function result() {
 
   if (customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob', name);
+    newStory = newStory.replace('名前', name);
   }
 
   if (document.getElementById("ja").checked) {
